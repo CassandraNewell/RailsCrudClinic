@@ -4,9 +4,9 @@
 <%  @wing_orders.each do |wing_order| %>
   <div class=".wing_order">
     <h2><%= wing_order.customer_name %></h2>
-    <span><%= wing_order.city %></span>
-    <span>Quantity: <%= wing_order.quantity %></span>
-    <span>Include Ranch Dressing? <%= wing_order.ranch_dressing ? "Yes" : "No" %></span>
+    <p><%= wing_order.city %></p>
+    <p>Quantity: <%= wing_order.quantity %></p>
+    <p>Include Ranch Dressing? <%= wing_order.ranch_dressing ? "Yes" : "No" %></p>
   </div>
   <hr />
 <% end %>
