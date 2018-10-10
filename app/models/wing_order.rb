@@ -3,7 +3,8 @@ class WingOrder < ApplicationRecord
     [10, "10 wings"],
     [25, "25 wings"],
     [50, "50 wings"],
-    [100, "100 wings"]
+    [100, "100 wings"],
+    [120, "120 wings"]
   ]
 
   validates :customer_name, presence: true

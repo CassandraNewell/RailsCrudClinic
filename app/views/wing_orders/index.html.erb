@@ -8,6 +8,10 @@
     <p>Quantity: <%= wing_order.quantity %></p>
     <p>Ranch? <%= wing_order.ranch_dressing ? "Yes" : "No" %></p>
   </div>
+  <p> <%= link_to 'Edit Wing Order', edit_wing_order_path(wing_order) %> </p>
+  <p> <%= link_to 'Delete Wing Order', wing_order_path(wing_order),
+    method: :delete,
+    data: { confirm: 'REALLY????' }  %> </p>
   <hr />
 <% end %>
 </div>
